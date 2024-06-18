@@ -57,7 +57,7 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     }
 @Override
 public void addResourceHandlers(ResourceHandlerRegistry registry){
-    registry.addResourceHandler("/Module-4/**").addResourceLocations("file:" + upload);
+    registry.addResourceHandler("/image/**").addResourceLocations("file:" + upload);
 }
     @Bean(name = "multipartResolver")
     public CommonsMultipartResolver getResolver(){

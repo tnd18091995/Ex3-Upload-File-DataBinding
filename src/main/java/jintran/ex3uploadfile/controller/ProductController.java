@@ -36,7 +36,7 @@ public class ProductController {
     @GetMapping("/create")
     public ModelAndView showCreateForm() {
         ModelAndView modelAndView = new ModelAndView("/create");
-        modelAndView.addObject("productFrom", new ProductForm());
+        modelAndView.addObject("productForm", new ProductForm());
         return modelAndView;
     }
 
